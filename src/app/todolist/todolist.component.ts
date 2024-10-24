@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 export class TodolistComponent {
 
 
-  task=[{taskName:" going to gym", isChecked:false}]
+  task=[{taskName:" going to shoping" , isChecked:false}]
   
   constructor(){
 
@@ -17,7 +17,7 @@ export class TodolistComponent {
  ngOnInit(): void {
 
  }
-   onSubmit(form: NgForm){    //template driven forms
+   onSubmit(form: NgForm){  //template driven forms
     console.log(form);
     this.task.push({
       taskName:form.controls['task'].value,  //two way binding
